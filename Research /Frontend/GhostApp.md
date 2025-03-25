@@ -1,3 +1,5 @@
+# Frontend Ticket #0
+
 ### Okay so upon reading up i came up with the main things that our app needs to have
 1. Doesn't appear in app drawer
 2. Doesn't appear in list of running apps
