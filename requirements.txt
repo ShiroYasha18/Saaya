@@ -1,0 +1,5 @@
+pydub
+confluent-kafka
+testcontainers
+numpy
+tensorflow
