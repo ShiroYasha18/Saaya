@@ -45,8 +45,8 @@ class AudioProducer:
                     "audio_data": chunk.raw_data.hex()
                 }
                 self.producer.produce(KAFKA_TOPIC, key=str(i), value=json.dumps(chunk_data), callback=delivery_report)
-                self.producer.flush()  # Ensure each chunk is sent immediately
 
+            self.producer.flush()  # Ensure all chunks are sent
             logging.info(f"Finished processing {file_path}.")
         except Exception as e:
             logging.error(f"Error processing {file_path}: {e}")
